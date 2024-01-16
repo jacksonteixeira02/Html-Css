@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Bebas';
+    src: url('../BebasNeue-Regular.ttf') format(truetype);
+    font-weight: normal;
+
+}
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format(opentype);
+    font-weight: normal;
+}
+:root{
+    --cor0: #E2EDE7;
+    --cor01: #c4dda2;
+    --cor02: #80a54c;
+    --cor03: #739740;
+    --cor04: #333d27;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, Sans-Serif; 
+
+    --fonte-destaque: 'Bebas';
+    --fonte-android: 'Android';
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor03), var(--cor04));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1{
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+header > p{
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 500x;
+    margin: auto;
+}
+
+nav{
+    background-color: var(--cor04);
+    padding: 10px;
+}
+
+nav > a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+main h1{
+    color: var(--cor04);
+    font-family: var(--fonte-android);
+}
+
+main h2{
+    font-family: var(--fonte-android);
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+main img{
+    width: 100%;
+}
+
+main img.pequena{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+footer{
+    background-color: var(--cor04);
+    color: white;
+}
